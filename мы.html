@@ -1,0 +1,556 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=San+Francisco:wght@400&display=swap" rel="stylesheet">
+    </head>
+
+<body>
+    <header class="header" id="header">
+        <div class="logo">
+            <img
+                src="https://cdn.pixelbin.io/v2/dummy-cloudname/erase.bg(shadow:true)~t.resize(w:675)/__editor/__erase_bg/2024-10-1/IMG_6141-removebg.png?download=true">
+        </div>
+        <a href="#data">Дата</a>
+        <a href="#dress">Дресс-код</a>
+        <a href="#registrationForm">Гости</a>
+        <a href="#programma">Программа</a>
+
+        <div class="dropdown">
+            <button class="settings-button" onclick="toggleDropdown()">=
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+            <a href="#data">Дата</a>
+            <a href="#dress">Дресс-код</a>
+            <a href="#registrationForm">Гости</a>
+            <a href="#programma">Программа</a>
+            </div>
+            </div>
+    </header>
+    <main>
+        <div id="pic">
+            <img src="https://sun9-27.userapi.com/impg/hlTbnAL6rUkth-FXGzg-Hy40Q5k_1Roj4-xI1g/IUBz2-O3lwg.jpg?size=1855x1043&quality=95&sign=bc895760fecd4dce942fd12392614d67&type=album"
+                alt="pic1">
+        </div>
+        <section id=welcome>
+            <h1 class="dor">Дорогие</h1>
+            <h1 >Друзья и родные</h1>
+            <div>Один день в этом году будет для нас особенным, и мы хотим провести его в кругу близких и друзей. с
+                Большим удовольствием приглашаем вас на нашу свадьбу!</div>
+        </section>
+        <section id=picone>
+            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/3594db140105869.623b6fcc008ad.png"
+                width="100%">
+        </section>
+        <section id=data style="margin: 80px;">
+            <div style="border: 4px solid white; padding:10px;  margin-bottom: 50px; display:inline" >24 августа 2025</div>
+        </section>
+        <section id=place>
+            <h1>Место проведения</h1>
+            <div>г.Новосибирск</div>
+            <div>Учительская 24/1</div>
+            <button id=butplace>Схема проезда</button>
+        </section>
+        <section id=dress>
+            <h1> ДРЕСС-КОД</h1>
+            <div id=rectangle>
+                <div class="rectangle"></div>
+                <div class="rectangle" style="background-color:white"></div>
+                <div class="rectangle" style="background-color:grey"></div>
+                <div class="rectangle" style="background-color:blue
+  "></div>
+                <div class="rectangle" style="background-color: black"></div>
+                <div class="rectangle" style="background-color:pink"></div>
+            </div>
+        </section>
+        <section>
+            <div id="pictwo"><img
+                    src="https://lh3.googleusercontent.com/XKc_oAjl9CvZa8qkHinTyumQ4zoxhltusClGMUJsJTXSR2dV8uLfdodd4OFPJnfuA7xup2IsBg7HzRGoAIOu1hAPtiuLOsghjPlRhw=w1200-h800-l90-e30"
+                    alt="pic1"></div>
+        </section>
+        <section id="programma">
+            <ol >
+                <li>Сборы, фотосессия «утро невесты», выкуп. Все это происходит с утра, примерно за 3-5 часов до момента регистрации. Если молодые уже живут вместе, то выкуп можно исключить, так он уже будет не актуален</li>
+                <li>Дорога от дома жениха и невесты до ЗАГСа. В больших городах на этот этап нужно отвести больше времени, иначе есть риск попасть в пробку и опоздать.</li>
+                <li>Венчание или роспись. Средняя продолжительность венчания – 1 час, росписи – 20 минут. Можно совмещать эти два события, сначала регистрацию, потом заключение брака в церкви.</li>
+                <li>Фотосессия. На нее лучше оставить до 3 часов, взяв в расчет еще и время на дорогу к ресторану.</li>
+                <li>Банкет. Обычно продолжается около 5 часов.</li>
+                <li>Развоз гостей по домам (по желанию) – на него уходит примерно 2-3 часа.</li>
+            </ol>
+        </section>
+        <div class="container">
+            <div>
+              <div class="content">
+                <h2>Счастье</h2>
+                <span>______________________</span>
+              </div>
+            </div>
+            <div>
+              <div class="content">
+                <h2>Любовь</h2>
+                <span>______________________</span>
+              </div>
+            </div>
+            <div>
+              <div class="content">
+                <h2>Забота</h2>
+                <span>______________________</span>
+              </div>
+            </div>
+            <div>
+              <div class="content">
+                <h2>Уважение</h2>
+                <span>______________________</span>
+              </div>
+            </div>
+            <div>
+              <div class="content">
+                <h2>Доверие</h2>
+                <span>______________________</span>
+              </div>
+            </div>
+            <div>
+              <div class="content">
+                <h2>Понимание</h2>
+                <span>______________________</span>
+              </div>
+            </div>
+          </div>
+          <section>
+          <div class="containerr">
+            <h1>Пора заполнить анкету гостя</h1>
+            <form id="registrationForm">
+                <input type="text" id="lastName" placeholder="Фамилия" required>
+                <input type="text" id="firstName" placeholder="Имя" required>
+                <input type="text" id="middleName" placeholder="Отчество" required>
+                <label>
+                    <input type="checkbox" id="alone"> Буду один
+                </label>
+                <label>
+                    <input type="checkbox" id="plusOne"> Буду +1
+                </label>
+                <label>
+                    <input type="checkbox" id="drinking"> Буду пить
+                </label>
+                <textarea id="comment" placeholder="Комментарий или вопрос"></textarea>
+                <button type="submit" id="buttonf" >Готово</button>
+                <button type="submit" id="buttonff" onclick="alert('пошел нахуй! хули тыкаешь куда не надо')">Готово</button>
+            </form>
+        
+            <div id="responses">
+                <h2>Список гостей</h2>
+                <div id="responseList"></div>
+                <button id="toggleResponses">Скрыть список</button>
+            </div>
+        </div>
+        </section>
+        <style>
+            .dropdown {
+position: relative;
+display: block;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: white;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 3;
+left:-60px;
+top:70px;
+
+}
+
+.dropdown-content a {
+color: black;
+padding: 10px 10px 10px 10px;
+text-decoration: none;
+display: block;
+margin-left:-5px;
+
+}
+
+.dropdown-content a:hover {
+background-color: #f1f1f1;
+}
+
+.show {
+display: block;
+}
+            #butplace {
+                color: white;
+                background-color: black;
+                border-radius: 10px;
+                margin-bottom: 200px;
+                margin-top: 70px;
+                width: 120px;
+                height: 40px;
+                text-align: center;
+                box-shadow: 3px 1px 1px whitesmoke;
+            }
+
+            #butplace:hover {
+                color: black;
+                background-color: white;
+                border-radius: 10px;
+            }
+
+            #data {
+                padding-top: 180px;
+            }
+
+            #place,
+            #data,
+            #welcome {
+                font-style: italic;
+                font-size: 30px;
+                text-align: center;
+                color: white;
+            }
+
+            #welcome div {
+                text-align: justify;
+                width: 80%;
+                margin-left: 10%;
+                padding-top: 180px;
+                height: 400px;
+            }
+
+            body {
+                background-color: black;
+                margin-left: 0px;
+                margin-top: -60px;
+                margin-right: -10px;
+            }
+
+            #dress {
+                background-color: whitesmoke;
+                height: 100px;
+                padding-top: 20%;
+                padding-bottom: 20%;
+                text-align: center;
+
+            }
+
+            #name {
+                height: 100px;
+            }
+
+            #rectangle {
+                display: flex;
+                gap: 40px;
+                justify-content: center;
+
+            }
+
+            .rectangle {
+                height: 60px;
+                /* Высота круга */
+                width: 60px;
+                /* Ширина круга */
+                border: 2px solid white;
+                /* Белая рамка */
+                border-radius: 50%;
+                /* Скругляем углы, чтобы получить круг */
+            }
+
+            .rectangle:hover {
+                transform: scale(2);
+                /* Увеличение круга при наведении */
+            }
+
+            #welcome {
+                background-image: linear-gradient(black, whitesmoke);
+                padding-top: 150px;
+                padding-bottom: 150px;
+                height: 1050px;
+            }
+
+
+            a {
+                text-decoration: none;
+                color: black;
+                font-family: Georgia;
+            }
+
+            .header {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                background-color: rgba(F, F, F, F);
+                color: black;
+                height: 50px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 20px;
+                padding-left: 0%;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+                z-index: 1000;
+                transition: background-color 0.3s ease;
+            }
+
+            .header.transparent {
+                background-color: white;
+            }
+
+            .header .logo img {
+                width: 40px;
+                height: 40px;
+                margin: 20px 10px 10px 10px;
+            }
+
+            .header .settings-button {
+                background-color: transparent;
+                border: none;
+                color: black;
+                font-size: 35px;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                margin: 5px;
+            }
+
+            .header .settings-button:hover {
+                color: gold;
+            }
+
+            .header a:hover {
+                color: gold;
+            }
+            #pic img {
+                    top: 50%;
+                    left: 50%;
+                    min-width: 100%;
+                    min-height: 100%;
+                    width: auto;
+                    height: auto;
+                }
+            #pic {
+                top: 0;
+                /* Сверху */
+                left: 0;
+                /* Слева */
+                width: 100vw;
+                /* 100% ширины видимой области */
+                height: 100vh;
+
+                /* 100% высоты видимой области */
+            }
+            #programma ol
+            { 
+                font-style:italic; 
+                background-color:#ffffff; 
+                color:rgb(0, 0, 0); 
+                text-align: left;
+                font-size: 30px;
+                margin: 100px 100px 300px 100px; 
+                padding: 100px 100px 100px 100px; 
+                height:700px; 
+            line-height: 1.8;   
+            }
+            @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.dor{
+    padding-top: 200px;
+}
+.container {
+  
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  gap: 10px;
+
+  > div {
+    flex: 0 0 120px;
+    border-radius: 0.5rem;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    box-shadow: 1px 5px 15px #1e0e3e;
+    position: relative;
+    overflow: hidden;
+
+    &:nth-of-type(1) {
+      background: url("https://psv4.userapi.com/s/v1/d/Vi5Lvo4FUwN5g18utIIskE7bRPpPfbqpglbdEdvL3fTIvuvhNovaBzabkMwfqU-a4qLzznYlxKZP5ztwxKIyWB3vRhLQzGATKz8CiHshpvlp289xC0IM0A/IMG_4838.jpg")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(2) {
+      background: url("https://psv4.userapi.com/s/v1/d/L3jsp37unGQwlmPK-YrenozTS1O2_LgW6AR3GqcFM46Ap8W58_wKmD8ZuTRZAud40Uc8cIexVZyA8McVY7Ws-0omD9KdO0ev3JesJpI9kyyKlP_E7n9Eog/IMG_4364.jpg")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(3) {
+      background: url("https://psv4.userapi.com/s/v1/d/NZVX6h3R7M6j7dNHJxH2kvSahT73TtKyNve7dS9OaatJoD6udkc2phsffkogUtRDqXSaOZTXP_OTWJbcJcjmorHqXhBE19yDHutgpTlcRregowAZ-7rgzA/IMG_4180.jpg")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(4) {
+      background: url("https://psv4.userapi.com/s/v1/d/uymeZnzxq_qejpjsHoP9kMJvadJ9_QcvX_6FX9P_gcPcE5KnAZB3olEMr7CqDYEAIZPV2W3bU4CRn8W8uMsigXzlYoQ-D0IVFgAgfbKB-Nzn80h5HbOUkA/IMG_2490.jpg")
+        no-repeat 50% / cover;
+    }
+ &:nth-of-type(5) {
+      background: url("https://psv4.userapi.com/s/v1/d/hpoBIaZJCixU95FQuIF2R3RvJD9f_Uv_7YGW8JOQGg5iepq3bOd75S_P4Wg9FSqkqShZjK6a8Jj8wKkf-SLedhNUu8oeGdv_s5NegOTpI4SlhTi8rwaZjw/IMG_3056.jpg")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(6) {
+      background: url("https://psv4.userapi.com/s/v1/d/mZSiISRo2CNA444fwgruargVbPzunQrSSjFpZfV1vQD9lnI3uAm-ZaXwLUVDEBl4Mvwa01FqNS0fcC48N8ztpaK072dFae13IdbyR5xjuFNN9oe7dumUpQ/IMG_5254.jpg")
+        no-repeat 50% / cover;
+    }
+    .content {
+      font-size: 1.5rem;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      opacity: 0;
+      flex-direction: column;
+      height: 100%;
+      justify-content: flex-end;
+      background: rgb(2, 2, 46);
+      background: linear-gradient(
+        0deg,
+        rgba(2, 2, 46, 0.6755077030812324) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      transform: translatey(100%);
+      transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+      visibility: hidden;
+
+      span {
+        display: block;
+        margin-top: 5px;
+        font-size: 1.2rem;
+      }
+    }
+
+    &:hover {
+      flex: 0 0 250px;
+      box-shadow: 1px 3px 15px #7645d8;
+      transform: translatey(-30px);
+    }
+
+    &:hover .content {
+      opacity: 1;
+      transform: translatey(0%);
+      visibility: visible;
+    }
+  }
+}
+
+        .containerr {
+            max-width: 600px;
+            margin: auto;
+            margin-top: 250px;
+            background: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #5f0e74;
+            border-radius: 20px;
+        }
+        #buttonf {
+            padding: 10px 20px;
+            margin-top: 10px;
+            margin-left: 44%;
+            background-color: #5f0e74;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+
+        }
+        button:hover {
+            background-color: black;
+        }
+        #responses {
+            margin-top: 100px;
+            display: none; /* Скрываем блок с ответами по умолчанию */
+        }
+        .response-item {
+            background: white;
+            border-radius: 4px;
+            padding: 10px;
+            margin: 5px 0;
+            color:black;
+        }
+        #toggleResponses{
+            padding: 10px 20px;
+            margin-top: 10px;
+            margin-left: 40%;
+            background-color: #5f0e74;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        </style>
+    </main>
+    <script>
+      const form = document.getElementById('registrationForm');
+          const responseList = document.getElementById('responseList');
+          const responsesContainer = document.getElementById('responses');
+          const toggleButton = document.getElementById('toggleResponses');
+      
+          form.addEventListener('submit', function(event) {
+              event.preventDefault(); // Остановить отправку формы
+      
+              // Получение значений из формы
+              const lastName = document.getElementById('lastName').value;
+              const firstName = document.getElementById('firstName').value;
+              const middleName = document.getElementById('middleName').value;
+      
+              // Добавление ответа в список
+              const listItem = document.createElement('li'); // Создаем элемент списка <li>
+              listItem.classList.add('response-item');
+              listItem.textContent = `${lastName} ${firstName} ${middleName}`; // Составляем текст для списка
+              responseList.appendChild(listItem); // Добавляем элемент в список
+      
+              // Показать контейнер с ответами
+              responsesContainer.style.display = 'block';
+      
+              // Очистить форму
+              form.reset();
+          });
+      
+          toggleButton.addEventListener('click', function() {
+              if (responsesContainer.style.display === 'none' || responsesContainer.style.display === '') {
+                  responsesContainer.style.display = 'block';
+                  toggleButton.textContent = 'Показать список'; // Меняем текст кнопки
+              } else {
+                  responsesContainer.style.display = 'none';
+                  toggleButton.textContent = 'Скрыть список'; // Меняем текст кнопки
+              }
+          });
+          
+function toggleDropdown() {
+document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Закрывает выпадающее меню, если кликнули вне его
+window.onclick = function(event) {
+if (!event.target.matches('.dropdown button')) {
+var dropdowns = document.getElementsByClassName("dropdown-content");
+for (var i = 0; i < dropdowns.length; i++) {
+var openDropdown = dropdowns[i];
+if (openDropdown.classList.contains('show')) {
+openDropdown.classList.remove('show');
+}}}}
+
+      </script>
+</body>
+
+</html>
